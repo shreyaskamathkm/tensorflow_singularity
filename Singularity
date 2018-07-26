@@ -1,5 +1,5 @@
 Bootstrap: docker
-From: shreyaskamathkm/pytorch:0.4.0
+From: shreyaskamathkm/deeplearning
 
 
 %environment
