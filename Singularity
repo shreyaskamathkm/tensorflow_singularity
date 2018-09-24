@@ -32,6 +32,8 @@ From: shreyaskamathkm/deeplearning
   /opt/conda/bin/conda update -y --all	
   /opt/conda/bin/conda clean -ya
   pip install natsort
+  pip uninstall protobuf
+  pip uninstall tensorflow 
   pip install --upgrade tensorflow-gpu
   pip install keras
 
