@@ -28,11 +28,12 @@ From: shreyaskamathkm/deeplearning
   
   # user requests 
   /opt/conda/bin/conda install python=3.6
-  /opt/conda/bin/conda install -c anaconda flake8 tensorflow-tensorboard
   /opt/conda/bin/conda install -c conda-forge onnx spectrum nibabel
   /opt/conda/bin/conda update -y --all	
   /opt/conda/bin/conda clean -ya
   pip install natsort
+  pip install --upgrade tensorflow-gpu
+  pip install keras
 
 %runscript
   # executes with the singularity run command
