@@ -15,7 +15,8 @@ From: shreyaskamathkm/deeplearning
 
 %post
   # post-setup script
-
+  apt update && apt install -y libsm6 libxext6
+  apt-get install -y libxrender-dev
   # load environment variables
   . /environment
 
@@ -32,11 +33,12 @@ From: shreyaskamathkm/deeplearning
   /opt/conda/bin/conda update -y --all	
   /opt/conda/bin/conda clean -ya
   pip install natsort
-  pip uninstall protobuf
-  pip uninstall tensorflow 
+  pip install opencv-python
+  pip install opencv-contrib-python
   pip install --upgrade tensorflow-gpu
   pip install keras
-
+  pip install torch torchvision
+  
 %runscript
   # executes with the singularity run command
   # delete this section to use existing docker ENTRYPOINT command
