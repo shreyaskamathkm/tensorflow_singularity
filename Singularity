@@ -32,9 +32,11 @@ From: shreyaskamathkm/deeplearning
   /opt/conda/bin/conda install -c conda-forge onnx spectrum nibabel
   /opt/conda/bin/conda update -y --all	
   /opt/conda/bin/conda clean -ya
+  conda uninstall protobuf
   pip install natsort
   pip install opencv-python
   pip install opencv-contrib-python
+  pip install protobuf
   pip install --upgrade tensorflow-gpu
   pip install keras
   pip install torch torchvision
